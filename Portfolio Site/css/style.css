@@ -1,0 +1,207 @@
+body {
+    background-color: #060826;
+    color: #f2e6ce;
+    margin-left: 2%;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+}
+a:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+.logo-img {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+}
+.top-logo {
+    text-align: center;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.index-img {
+    background-image: url('./assets/images/netwerk.jpg');
+    opacity: 0.2;
+    background-repeat: no-repeat;
+}
+
+@media (min-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .top-logo {
+        align-items: center;
+        text-align: left;
+    }
+    .contact-section {
+        flex: none;
+        padding-left: 12rem;
+    }
+}
+
+.nav-link {
+    color: #f2e6ce;
+    font-weight: normal;
+}
+.nav-link.disabled {
+    color: #f2e6ce;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #f2e6ce;
+}
+
+input[type=text],[type=email] {
+    box-sizing: border-box;
+    background-color: #060826;
+    color: #f2e6ce;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+}
+input[type=text]::placeholder,[type=email]::placeholder {
+    color: grey;
+}
+input[type=text]:focus,[type=email]:focus {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    background-color: #060826;
+    color: #f2e6ce;
+    resize: none;
+    height: 360px;
+}
+textarea::placeholder {
+    color: grey;
+}
+textarea:focus {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+.btn {
+    box-sizing: border-box;
+    background-color: #060826;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    color: #f2e6ce;
+}
+.btn:hover,.accordion-header:hover {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.profile-photo {
+    width: 120px;
+    height: 160px;
+    margin: 0 auto 1rem auto;
+}
+
+.text-overlay {
+    background: rgba(5, 5, 40, 0.75);
+    color: #f2e6ce;
+    padding: 1.5rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+.form-overlay {
+    background: rgba(5, 5, 40, 0.75);
+    padding: 2rem;
+    border-radius: 15px;
+    color: #fff;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+}
+
+@media (min-width: 768px) {
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: flex;
+    }
+}
+@media (max-width: 767.98px) {
+    .mobile-view {
+        display: block;
+    }
+    .desktop-view {
+        display: none;
+    }
+}
+
+.index-image {
+    background-image: url('../assets/images/netwerk.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center;
+}
+.contact-image {
+    background-image: url('../assets/images/robot.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    min-height: 100vh; 
+    display: flex; 
+    align-items: center;
+}
+
+.accordion-button.collapsed {
+    box-sizing: border-box;
+    background-color: #060826;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    color: #f2e6ce;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #f2e6ce;
+    color: #060826;
+    font-weight: bold;
+    font-size: large;
+}
+
+.accordion-item {
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+.project-image {
+    opacity: 0.8;
+    height: 80%;
+    width: 80%;
+}
