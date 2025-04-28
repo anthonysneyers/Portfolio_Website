@@ -187,14 +187,12 @@ textarea:focus {
     border-radius: 0;
     color: #f2e6ce;
 }
-
 .accordion-button:not(.collapsed) {
     background-color: #f2e6ce;
     color: #060826;
     font-weight: bold;
     font-size: large;
 }
-
 .accordion-item {
     background-color: #060826;
     color: #f2e6ce;
