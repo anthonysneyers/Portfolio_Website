@@ -198,6 +198,23 @@ textarea:focus {
     color: #f2e6ce;
 }
 
+.keywords {
+    font-style: italic;
+}
+
+.progress {
+    height: 1.5rem;
+    background: #f2e6ce;
+}
+.progress-bar {
+    background: #060826;
+    color: #f2e6ce;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #f2e6ce;
+}
+
 .project-image {
     opacity: 0.8;
     height: 80%;
