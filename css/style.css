@@ -205,6 +205,8 @@ textarea:focus {
 .progress {
     height: 1.5rem;
     background: #f2e6ce;
+    border-radius: 1rem;
+    border-width: 0.1rem;
 }
 .progress-bar {
     background: #060826;
