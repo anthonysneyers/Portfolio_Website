@@ -36,42 +36,20 @@
         </div>
     </header>
     <main>
-        <!-- Desktop Layout -->
         <section class="container-fluid mb-4 row g-3 desktop-view">
             <div class="col-md-6 p-2">
                 <img src="./assets/images/robot.jpg" alt="Robot" height="500px">
             </div>
-            <form class="col-md-6" name="contact-desktop" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="./contact_success.html">
-                <div class="row g-3 mx-2">
-                    <input class="col m-4 form-control" type="text" name="Naam" id="Naam" placeholder="Naam">
-                    <input class="col m-4 form-control" type="email" name="Email" id="Email" placeholder="E-mail">
-                </div>
-                <div class="row g-3 mx-2">
-                    <textarea class="col m-4" type="text" name="Bericht" id="Bericht" placeholder="Uw bericht"></textarea>
-                </div>
-                <div class="row g-3 mx-2">
-                    <input class="col m-4 btn" type="reset" value="Reset">
-                    <button class="col m-4 btn" type="submit">Verzenden</button>
-                </div>
-            </form>
+            <h1 class="h4 col-md-6 p-2">
+            De informatie van het contactformulier is successvol doorgestuurd.<br>
+            Bedankt om contact met mij op te nemen.<br><br><br>
+            </h1>
         </section>
-        <!-- Mobile Layout -->
         <section class="mobile-view">
-            <form class="contact-image" name="contact-mobile" method="POST" data-netlify="true" data-netlify-recaptcha="true" action="./contact_success.html">
-                <div class="form">
-                    <div class="row g-3 mx-2">
-                        <input class="col m-4 form-control" type="text" name="Naam" id="Naam2" placeholder="Naam">
-                        <input class="col m-4 form-control" type="email" name="Email" id="Email2" placeholder="E-mail">
-                    </div>
-                    <div class="row g-3 mx-2">
-                        <textarea class="col m-4" type="text" name="Bericht" id="Bericht2" placeholder="Uw bericht"></textarea>
-                    </div>
-                    <div class="row g-3 mx-2">
-                        <input class="col m-4 btn" type="reset" value="Reset">
-                        <button class="col m-4 btn" type="submit">Verzenden</button>
-                    </div>
-                </div>
-            </form>
+            <h1 class="h4 contact-image">
+            De informatie van het contactformulier is successvol doorgestuurd.<br>
+            Bedankt om contact met mij op te nemen.<br><br><br>
+            </h1>
         </section>
     </main>
     <aside></aside>
@@ -85,7 +63,7 @@
                     <a class="nav-link text-center" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item col-md-4">
-                    <a class="nav-link text-end me-4 disabled" href="contact.html">Contact</a>
+                    <a class="nav-link text-end me-4" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
