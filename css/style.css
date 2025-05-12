@@ -3,6 +3,16 @@ body {
     color: #f2e6ce;
     margin-left: 2%;
 }
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    margin-top: auto;
+}
+aside {
+    vertical-align: middle;
+}
 
 a {
     text-decoration: none;
@@ -22,8 +32,12 @@ a:hover {
     font-weight: bold;
 }
 
-/* instellingen voor afbeeldingen en foto's */
+.copyright {
+    text-align: center;
+    font-style: italic;
+}
 
+/* instellingen voor afbeeldingen en foto's */
 .intro-image {
     width: 95%;
     height: 95%;
@@ -46,7 +60,6 @@ a:hover {
 }
 
 /* media instellingen voor de onderscheiding van desktop en mobile */
-
 @media (min-width: 768px) {
     .mobile-view {
         display: none;
@@ -69,7 +82,7 @@ a:hover {
         padding-left: 12rem;
     }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 767.99px) {
     .mobile-view {
         display: block;
     }
@@ -105,7 +118,6 @@ a:hover {
 }
 
 /* instellingen voor de nav-link */
-
 .nav-link {
     color: #f2e6ce;
     font-weight: normal;
@@ -119,9 +131,7 @@ a:hover {
 }
 
 /* instellingen voor het contactformulier */
-
     /* instellingen voor de input textboxen in de form */
-
 input[type=text],[type=email] {
     box-sizing: border-box;
     background-color: #060826;
@@ -139,7 +149,6 @@ input[type=text]:focus,[type=email]:focus {
 }
 
     /* instellingen voor textarea in de form */
-
 textarea {
     box-sizing: border-box;
     border: 1px solid #f2e6ce;
@@ -159,7 +168,6 @@ textarea:focus {
 }
 
     /* instellingen voor de buttons in de form */
-
 .btn {
     box-sizing: border-box;
     background-color: #060826;
@@ -174,9 +182,7 @@ textarea:focus {
 }
 
 /* instellingen voor de accordion op de portfolio pagina */
-
     /* instellingen voor de accordion knoppen */
-
 .accordion-button.collapsed {
     box-sizing: border-box;
     background-color: #060826;
@@ -192,7 +198,6 @@ textarea:focus {
 }
 
     /* instellingen voor de accordion item inhoud */
-
 .accordion-item {
     background-color: #060826;
     color: #f2e6ce;

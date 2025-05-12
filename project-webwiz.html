@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactpagina</title>
+    <title>Projectpagina WebWiz</title>
     <!-- resetten van browsers -->
     <link rel="stylesheet" href="css/reset.css">
     <!-- Bootstrap CSS -->
@@ -35,30 +35,37 @@
                     <a class="nav-link px-4" href="portfolio.html">Portfolio</a>
                 </li>
                 <li class="nav-item col-md-6">
-                    <a class="nav-link disabled px-4" href="contact.html" disabled>Contact</a>
+                    <a class="nav-link px-4" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
     </header>
-    <!-- Desktop Layout -->
-    <section class="container-fluid desktop-view">
-        <main class="row col-md-10 g-0">
-            <div class="col-md-5">
-                <img src="./assets/images/robot.jpg" alt="Robot" height="500px">
+    <section class="container-fluid row">
+        <main class="col-md-10 row">
+            <h1>Project WebWiz</h1>
+            <div class="col-md-6 g-3">
+                <img src="./assets/images/Cabling.jpg" alt="Cabling" class="project-image">
             </div>
-            <form class="col-md-6 d-flex flex-column" name="contact-desktop" method="POST" data-netlify="true" action="/contact_success.html">
-                <div class="row g-3 mx-2">
-                    <input class="col m-4 form-control" type="text" name="Naam" id="Naam" placeholder="Naam">
-                    <input class="col m-4 form-control" type="email" name="Email" id="Email" placeholder="E-mail">
-                </div>
-                <div class="row g-3 mx-2">
-                    <textarea class="col m-4" type="text" name="Bericht" id="Bericht" placeholder="Uw bericht"></textarea>
-                </div>
-                <div class="row g-3 mx-2">
-                    <input class="col m-4 btn" type="reset" value="Reset">
-                    <button class="col m-4 btn" type="submit">Verzenden</button>
-                </div>
-            </form>
+            <div class="col-md-6 g-3">
+                <p>
+                    In de nieuwbouw van <i>WebWiz</i> moet er voor een netwerkinfrastructuur gezorgd worden. <br>
+                    Op basis van de grondplannen, het huidige aantal werknemers en voorspelde uitbreidingmogelijkheden van het bedrijf 
+                    werd er een <i>aankooplijst</i> opgeleverd van oa een rack, switchen, patch panelen, servers, wall mounts, kabels, access points,...
+                </p>
+                <p>
+                    Het <i>patch plan</i> toont hoe de end devices verbonden zijn aan de switchen in het rack. <br>
+                    Aan een kant staan de wall mounts en de poorten van de wall mounts waar een specifiek end device aan verbonden is. 
+                    Aan de andere kant staan de nummer van het patchpaneel en de poortnummer op de switchen waaraan deze verbonden zijn.
+                </p>
+                <p>
+                    De opgeleverde <i>rack layout</i> toont de plaatsen van de router, switchen, patch panelen,... in de rack.<br>
+                    Als laatste werd er een <i>bekabelingsplan</i> opgeleverd dat al deze informatie visueel voorsteld.
+                </p>
+                <p>
+                    <br><br>
+                    <a href="./portfolio.html">&lt;&lt;&lt; Keer terug naar de portfolio.</a>
+                </p>
+            </div>
         </main>
         <aside class="col-md-2">
             <div>
@@ -71,26 +78,7 @@
                 <a href="https://www.linkedin.com/in/anthony-sneyers-55133980" target="_blank"><i class="bi-linkedin"></i> LinkedIn</a>
             </div>
         </aside>
-        <!-- Mobile Layout -->
-        <main class="mobile-view">
-            <form class="contact-image" name="contact-mobile" method="POST" data-netlify="true" action="/contact_success.html">
-                <div class="form">
-                    <div class="row g-3 mx-2">
-                        <input class="col m-4 form-control" type="text" name="Naam" id="Naam2" placeholder="Naam">
-                        <input class="col m-4 form-control" type="email" name="Email" id="Email2" placeholder="E-mail">
-                    </div>
-                    <div class="row g-3 mx-2">
-                        <textarea class="col m-4" type="text" name="Bericht" id="Bericht2" placeholder="Uw bericht"></textarea>
-                    </div>
-                    <div class="row g-3 mx-2">
-                        <input class="col m-4 btn" type="reset" value="Reset">
-                        <button class="col m-4 btn" type="submit">Verzenden</button>
-                    </div>
-                </div>
-            </form>
-        </main>
     </section>
-    <aside></aside>
     <footer>
         <p class="copyright">
             &copy;<span id="year"></span> Anthony Sneyers

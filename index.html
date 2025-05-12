@@ -17,83 +17,86 @@
     </script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- jaar.js invoegen -->
+     <script src="./js/jaar.js" defer></script>
 </head>
 <body>
     <header class="header pt-0 container-fluid">
         <!-- Logo bovenaan mobiel / links op desktop -->
-        <div class="top-logo d-flex justify-content-center align-items-center row">
+        <a href="./index.html" class="top-logo d-flex justify-content-center align-items-center row">
             <img class="logo-img col-md-4 ps-0" src="./assets/images/logo-blue.png" alt="Logo">
-        </div>
-        <div class="contact-section col-md-8">
-            <div class="text-center">
-                Documenten:<br>
-                <a href="./assets/documents/CV Anthony Sneyers.pdf" target="_blank"><i class="bi-filetype-pdf"></i> curriculum vitae</a>
-            </div>
-            <div class="text-end">
-                Socials:<br>
-                <a href="https://www.linkedin.com/in/anthony-sneyers-55133980" target="_blank"><i class="bi-linkedin"></i> LinkedIn</a>
-            </div>
-        </div>
-    </header>
-    <main>
-        <!-- Desktop Layout -->
-        <section class="container-fluid desktop-view">
-            <div class="row g-0">
-                <div class="col-md-7">
-                    <img src="./assets/images/netwerk.jpg" alt="Serverruimte" class="intro-image">
-                </div>
-                <div class="col-md-5 d-flex flex-column align-items-center p-4">
-                    <img src="./assets/images/20241220_145737.jpg" alt="Profielfoto" class="profile-photo">
-                    <p>
-                    Hallo, ik ben Anthony Sneyers, <br>
-                    een gepassioneerd professional met een sterke passie voor IT-infrastructuur en beheer, die een carrière switch naar de IT beoogd.
-                    </p>
-                    <p>
-                    Mijn aanpak is analytisch, gestructureerd en klantgericht. Het gaat me om het creëren van oplossingen die bij klanten aanslaan.
-                    </p>
-                    <p>
-                    Neem gerust contact met me op voor een gesprek over hoe ik waarde kan toevoegen aan uw project of organisatie.
-                    </p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Mobile Layout -->
-        <section class="mobile-view ">
-            <div class="index-image">
-                <div class="text-overlay">
-                    <div class="container text-center py-4">
-                        <img src="./assets/images/20241220_145737.jpg" alt="Profielfoto" class="profile-photo">
-                    </div>
-                    <p>
-                    Hallo, ik ben Anthony Sneyers, <br>
-                    een gepassioneerd professional met een sterke passie voor IT-infrastructuur en beheer, die een carrière switch naar de IT beoogd.
-                    </p>
-                    <p>
-                    Mijn aanpak is analytisch, gestructureerd en klantgericht. Het gaat me om het creëren van oplossingen die bij klanten aanslaan.
-                    </p>
-                    <p>
-                    Neem gerust contact met me op voor een gesprek over hoe ik waarde kan toevoegen aan uw project of organisatie.
-                    </p>
-                </div>
-            </div>
-        </section>
-    </main>
-    <aside></aside>
-    <footer>
-        <nav class="navbar navbar-expand-md container-fluid row" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item col-4">
-                    <a class="nav-link text-start ms-4 disabled" href="index.html" disabled>Startpagina</a>
+        </a>
+        <nav class="container-fluid navbar col-md-8" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-end list-group-horizontal">
+                <li class="nav-item col-md-6">
+                    <a class="nav-link disabled px-4" href="index.html" disabled>Startpagina</a>
                 </li>
-                <li class="nav-item col-4">
-                    <a class="nav-link text-center" href="portfolio.html">Portfolio</a>
+                <li class="nav-item col-md-6">
+                    <a class="nav-link px-4" href="portfolio.html">Portfolio</a>
                 </li>
-                <li class="nav-item col-4">
-                    <a class="nav-link text-end me-4" href="contact.html">Contact</a>
+                <li class="nav-item col-md-6">
+                    <a class="nav-link px-4" href="contact.html">Contact</a>
                 </li>
             </ul>
         </nav>
+    </header>
+    <!-- Desktop Layout -->
+    <section class="container-fluid desktop-view">
+        <main class="row g-0">
+            <div class="col-md-5">
+                <img src="./assets/images/netwerk.jpg" alt="Serverruimte" class="intro-image">
+            </div>
+            <div class="col-md-6 d-flex flex-column align-items-center p-4">
+                <img src="./assets/images/zelffoto.jpg" alt="Profielfoto" class="profile-photo">
+                <p>
+                Hallo, ik ben Anthony Sneyers, <br>
+                een gepassioneerd professional met een sterke passie voor IT-infrastructuur en beheer, die een carrière switch naar de IT beoogd.
+                </p>
+                <p>
+                Mijn aanpak is analytisch, gestructureerd en klantgericht. Het gaat me om het creëren van oplossingen die bij klanten aanslaan.
+                </p>
+                <p>
+                Neem gerust contact met me op voor een gesprek over hoe ik waarde kan toevoegen aan uw project of organisatie.
+                </p>
+            </div>
+        </main>
+        <aside class="col-md-2">
+            <div>
+                Documenten:<br>
+                <a href="./assets/documents/CV Anthony Sneyers.pdf" target="_blank"><i class="bi-filetype-pdf"></i> curriculum vitae</a>
+            </div>
+            <br>
+            <div>
+                Socials:<br>
+                <a href="https://www.linkedin.com/in/anthony-sneyers-55133980" target="_blank"><i class="bi-linkedin"></i> LinkedIn</a>
+            </div>
+        </aside>
+    </section>
+
+    <!-- Mobile Layout -->
+    <section class="mobile-view ">
+        <main class="index-image">
+            <div class="text-overlay">
+                <div class="container text-center py-4">
+                    <img src="./assets/images/zelffoto.jpg" alt="Profielfoto" class="profile-photo">
+                </div>
+                <p>
+                Hallo, ik ben Anthony Sneyers, <br>
+                een gepassioneerd professional met een sterke passie voor IT-infrastructuur en beheer, die een carrière switch naar de IT beoogd.
+                </p>
+                <p>
+                Mijn aanpak is analytisch, gestructureerd en klantgericht. Het gaat me om het creëren van oplossingen die bij klanten aanslaan.
+                </p>
+                <p>
+                Neem gerust contact met me op voor een gesprek over hoe ik waarde kan toevoegen aan uw project of organisatie.
+                </p>
+            </div>
+        </main>
+    </section>
+    <footer>
+        <p class="copyright">
+            &copy;<span id="year"></span> Anthony Sneyers
+        </p>
     </footer>
 </body>
 </html>

@@ -17,26 +17,31 @@
     </script>
     <!-- eigen geschreven css voor jouw html-bestand -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- jaar.js invoegen -->
+    <script src="./js/jaar.js" defer></script>
 </head>
 <body>
     <header class="header pt-0 container-fluid">
         <!-- Logo bovenaan mobiel / links op desktop -->
-        <div class="top-logo d-flex justify-content-center align-items-center row">
+        <a href="./index.html" class="top-logo d-flex justify-content-center align-items-center row">
             <img class="logo-img col-md-4 ps-0" src="./assets/images/logo-blue.png" alt="Logo">
-        </div>
-        <div class="contact-section col-md-8">
-            <div class="text-center">
-                Documenten:<br>
-                <a href="./assets/documents/CV Anthony Sneyers.pdf" target="_blank"><i class="bi-filetype-pdf"></i> curriculum vitae</a>
-            </div>
-            <div class="text-end">
-                Socials:<br>
-                <a href="https://www.linkedin.com/in/anthony-sneyers-55133980" target="_blank"><i class="bi-linkedin"></i> LinkedIn</a>
-            </div>
-        </div>
+        </a>
+        <nav class="container-fluid navbar col-md-8" id="navbarSupportedContent">
+            <ul class="navbar-nav align-items-end list-group-horizontal">
+                <li class="nav-item col-md-6">
+                    <a class="nav-link px-4" href="index.html">Startpagina</a>
+                </li>
+                <li class="nav-item col-md-6">
+                    <a class="nav-link px-4" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item col-md-6">
+                    <a class="nav-link px-4" href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <main>
-        <section class="container-fluid row">
+    <section class="container-fluid row">
+        <main class="col-md-10 row">
             <h1>Placeholder</h1>
             <div class="col-md-6 g-3">
                 <img src="./assets/images/placeholder.jpg" alt="PlaceHolder" class="project-image">
@@ -52,23 +57,23 @@
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil odit, similique dolor neque consequuntur ipsam harum, dolore veniam adipisci qui quibusdam quaerat illum amet possimus pariatur esse nam earum! Consequatur sequi illo sint quis magnam voluptatibus doloribus labore, quo accusamus. Dolorem, dignissimos nobis. Itaque magni velit voluptate. Voluptatum, minima magnam?
                 </p>
             </div>
-        </section>
-    </main>
-    <aside></aside>
+        </main>
+        <aside class="col-md-2">
+            <div>
+                Documenten:<br>
+                <a href="./assets/documents/CV Anthony Sneyers.pdf" target="_blank"><i class="bi-filetype-pdf"></i> curriculum vitae</a>
+            </div>
+            <br>
+            <div>
+                Socials:<br>
+                <a href="https://www.linkedin.com/in/anthony-sneyers-55133980" target="_blank"><i class="bi-linkedin"></i> LinkedIn</a>
+            </div>
+        </aside>
+    </section>
     <footer>
-        <nav class="navbar navbar-expand-md container-fluid row" id="navbarSupportedContent">
-            <ul class="navbar-nav">
-                <li class="nav-item col-md-4">
-                    <a class="nav-link text-start ms-4" href="index.html" disabled>Startpagina</a>
-                </li>
-                <li class="nav-item col-md-4">
-                    <a class="nav-link text-center" href="portfolio.html">Portfolio</a>
-                </li>
-                <li class="nav-item col-md-4">
-                    <a class="nav-link text-end me-4" href="contact.html">Contact</a>
-                </li>
-            </ul>
-        </nav>
+        <p class="copyright">
+            &copy;<span id="year"></span> Anthony Sneyers
+        </p>
     </footer>
 </body>
 </html>
