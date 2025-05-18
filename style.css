@@ -1,0 +1,250 @@
+body {
+    background-color: #060826;
+    color: #f2e6ce;
+    margin-left: 2%;
+}
+footer {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    margin-top: auto;
+    padding-top: 3rem;
+}
+aside {
+    vertical-align: middle;
+    padding-top: 2rem;
+    padding-right: 1rem;
+}
+
+a {
+    text-decoration: none;
+    font-weight: normal;
+    font-size: medium;
+}
+a:hover {
+    text-decoration: underline;
+    font-size: large;
+}
+
+h2 {
+    color: #f2e6ce;
+}
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 2rem;
+    font-weight: bold;
+}
+
+.copyright {
+    text-align: center;
+    font-style: italic;
+}
+
+/* instellingen voor afbeeldingen en foto's */
+.intro-image {
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+.profile-photo {
+    width: 120px;
+    height: 160px;
+    margin: 0 auto 1rem auto;
+}
+.project-image {
+    opacity: 0.8;
+    height: 80%;
+    width: 80%;
+}
+.logo-img {
+    height: 200px;
+    width: 200px;
+    margin-right: 10px;
+}
+
+/* media instellingen voor de onderscheiding van desktop en mobile */
+@media (min-width: 768px) {
+    .mobile-view {
+        display: none;
+    }
+    .desktop-view {
+        display: flex;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+    .top-logo {
+        align-items: center;
+        text-align: left;
+    }
+    .contact-section {
+        flex: none;
+        padding-left: 12rem;
+    }
+}
+@media (max-width: 767.99px) {
+    .mobile-view {
+        display: block;
+    }
+    .desktop-view {
+        display: none;
+    }
+    .text-overlay {
+        background: rgba(5, 5, 40, 0.75);
+        color: #f2e6ce;
+        padding: 1.5rem;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .index-image {
+        background-image: url('../assets/images/netwerk.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        min-height: 100vh; 
+        display: flex; 
+        align-items: center;
+    }
+    .contact-image {
+        background-image: url('../assets/images/robot.jpg'); 
+        background-size: cover; 
+        background-position: center; 
+        min-height: 50vh; 
+        display: flex; 
+        align-items: center;
+    }
+    .top-logo {
+        text-align: center;
+    }
+    footer {
+        position: relative;
+    }
+    .justify {
+        text-align: justify;
+    }
+}
+
+/* instellingen voor de nav-link */
+.nav-link {
+    color: #f2e6ce;
+    font-weight: normal;
+}
+.nav-link.disabled {
+    color: #f2e6ce;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #f2e6ce;
+}
+
+/* instellingen voor het contactformulier */
+    /* instellingen voor de input textboxen in de form */
+input[type=text],[type=email] {
+    box-sizing: border-box;
+    background-color: #060826;
+    color: #f2e6ce;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+}
+input[type=text]::placeholder,[type=email]::placeholder {
+    color: grey;
+}
+input[type=text]:focus,[type=email]:focus {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+    /* instellingen voor textarea in de form */
+textarea {
+    box-sizing: border-box;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    background-color: #060826;
+    color: #f2e6ce;
+    resize: none;
+    height: 360px;
+}
+textarea::placeholder {
+    color: grey;
+}
+textarea:focus {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+    /* instellingen voor de buttons in de form */
+.btn {
+    box-sizing: border-box;
+    background-color: #060826;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    color: #f2e6ce;
+}
+.btn:hover,.accordion-header:hover {
+    border: 3px solid #f2e6ce;
+    background-color: #060826;
+    color: #f2e6ce;
+}
+
+/* instellingen voor de accordion op de portfolio pagina */
+.accordion {
+    margin-right: 4rem;
+    margin-left: 1rem;
+}
+    /* instellingen voor de accordion knoppen */
+.accordion-button.collapsed {
+    box-sizing: border-box;
+    background-color: #060826;
+    border: 1px solid #f2e6ce;
+    border-radius: 0;
+    color: #f2e6ce;
+}
+.accordion-button:not(.collapsed) {
+    background-color: #f2e6ce;
+    color: #060826;
+    font-weight: bold;
+    font-size: large;
+}
+
+    /* instellingen voor de accordion item inhoud */
+.accordion-item {
+    background-color: #060826;
+    color: #f2e6ce;
+}
+.keywords {
+    font-style: italic;
+}
+.progress {
+    height: 1.5rem;
+    background: #f2e6ce;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+}
+.progress-bar {
+    background: #060826;
+    color: #f2e6ce;
+    font-style: italic;
+    border-radius: 1rem;
+    border-width: 0.1rem;
+    border-style: solid;
+    border-color: #f2e6ce;
+}
+    /* instellingen voor thumbnail foto in accordion */
+.thumbnail {
+    height: 100px;
+    width: 150px;
+    margin-left: 1rem;
+}
+/* instellingen voor de leaflet map */
+#mapA {
+    height: 250px;
+    width: 95%;
+}
