@@ -195,6 +195,10 @@ textarea:focus {
 }
 
 /* instellingen voor de accordion op de portfolio pagina */
+.accordion {
+    margin-right: 4rem;
+    margin-left: 1rem;
+}
     /* instellingen voor de accordion knoppen */
 .accordion-button.collapsed {
     box-sizing: border-box;
