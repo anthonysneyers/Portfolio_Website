@@ -9,9 +9,12 @@ footer {
     width: 100%;
     position: fixed;
     margin-top: auto;
+    padding-top: 3rem;
 }
 aside {
     vertical-align: middle;
+    padding-top: 2rem;
+    padding-right: 1rem;
 }
 
 a {
@@ -22,6 +25,10 @@ a {
 a:hover {
     text-decoration: underline;
     font-size: large;
+}
+
+h2 {
+    color: #f2e6ce;
 }
 
 .contact-section {
@@ -114,6 +121,12 @@ a:hover {
     }
     .top-logo {
         text-align: center;
+    }
+    footer {
+        position: relative;
+    }
+    .justify {
+        text-align: justify;
     }
 }
 
@@ -219,4 +232,14 @@ textarea:focus {
     border-width: 0.1rem;
     border-style: solid;
     border-color: #f2e6ce;
+}
+    /* instellingen voor thumbnail foto in accordion */
+.thumbnail {
+    height: 100px;
+    width: 150px;
+}
+/* instellingen voor de leaflet map */
+#mapA {
+    height: 250px;
+    width: 95%;
 }
