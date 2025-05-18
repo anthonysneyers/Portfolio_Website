@@ -237,6 +237,7 @@ textarea:focus {
 .thumbnail {
     height: 100px;
     width: 150px;
+    margin-left: 1rem;
 }
 /* instellingen voor de leaflet map */
 #mapA {
